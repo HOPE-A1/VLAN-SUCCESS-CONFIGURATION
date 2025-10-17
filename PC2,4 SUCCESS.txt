@@ -1,0 +1,24 @@
+Welcome to use PC Simulator!
+
+PC>
+
+PC Simulator has not been started!
+
+Welcome to use PC Simulator!
+
+PC>ping 192.168.20.30
+
+Ping 192.168.20.30: 32 data bytes, Press Ctrl_C to break
+From 192.168.20.30: bytes=32 seq=1 ttl=128 time=78 ms
+From 192.168.20.30: bytes=32 seq=2 ttl=128 time=94 ms
+From 192.168.20.30: bytes=32 seq=3 ttl=128 time=78 ms
+From 192.168.20.30: bytes=32 seq=4 ttl=128 time=93 ms
+From 192.168.20.30: bytes=32 seq=5 ttl=128 time=47 ms
+
+--- 192.168.20.30 ping statistics ---
+  5 packet(s) transmitted
+  5 packet(s) received
+  0.00% packet loss
+  round-trip min/avg/max = 47/78/94 ms
+
+PC>

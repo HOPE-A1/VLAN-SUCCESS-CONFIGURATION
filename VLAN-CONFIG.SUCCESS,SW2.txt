@@ -1,0 +1,146 @@
+The device is running!
+
+<Huawei>system-view
+Enter system view, return user view with Ctrl+Z.
+[Huawei]sysname SW2
+[SW2]interface
+Oct 17 2025 11:15:18-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 4, the c
+hange loop count is 0, and the maximum number of records is 4095.
+               ^
+Error:Incomplete command found at '^' position.
+[SW2]interface GigabitEthernet0/0/1
+[SW2-GigabitEthernet0/0/1]port link-type access
+[SW2-GigabitEthernet0/0/1]port d
+Oct 17 2025 11:15:48-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 5, the c
+hange loop count is 0, and the maximum number of records is 4095.
+                               ^
+Error:Ambiguous command found at '^' position.
+[SW2-GigabitEthernet0/0/1]port default vlan 10
+Error: The VLAN does not exist.
+[SW2-GigabitEthernet0/0/1]quit
+[SW2]vlan batch 10 20
+Info: This operation may take a few seconds. Please wait for a moment...done.
+[SW2]interface Gig
+Oct 17 2025 11:17:58-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 6, the c
+hange loop count is 0, and the maximum number of records is 4095.
+                   ^
+Error:Incomplete command found at '^' position.
+[SW2]interface GigabitEthernet0/0/1
+[SW2-GigabitEthernet0/0/1]port link-type access
+[SW2-GigabitEthernet0/0/1]port default vlan 10
+[SW2-GigabitEthernet0/0/1]
+Oct 17 2025 11:18:38-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 7, the c
+hange loop count is 0, and the maximum number of records is 4095.
+[SW2-GigabitEthernet0/0/1]quit
+[SW2]interface GigabitEthernet0/02
+               ^
+Error: Wrong parameter found at '^' position.
+[SW2]interface GigabitEthernet0/0/2
+[SW2-GigabitEthernet0/0/2]port link-type access
+[SW2-GigabitEthernet0/0/2]quit
+[SW2]interface
+Oct 17 2025 11:19:58-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 8, the c
+hange loop count is 0, and the maximum number of records is 4095.
+               ^
+Error:Incomplete command found at '^' position.
+[SW2]interface GigabitEthernet0/0/24
+[SW2-GigabitEthernet0/0/24]port link-type trunk
+[SW2-GigabitEthernet0/0/24]port tru
+Oct 17 2025 11:20:29-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 9, the c
+hange loop count is 0, and the maximum number of records is 4095.nk
+[SW2-port-group-trunk]port trunk-allw
+Oct 17 2025 11:20:39-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 10, the 
+change loop count is 0, and the maximum number of records is 4095
+                           ^
+Error: Unrecognized command found at '^' position.
+[SW2-port-group-trunk]port trunk-allow pass vlan 10 20
+                           ^
+Error: Unrecognized command found at '^' position.
+[SW2-port-group-trunk]quit
+[SW2]save
+     ^
+Error: Unrecognized command found at '^' position.
+[SW2]save
+     ^
+Error: Unrecognized command found at '^' position.
+[SW2]quit
+<SW2>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Info: Please input the file name ( *.cfg, *.zip ) [vrpcfg.zip]:
+Oct 17 2025 11:22:11-08:00 SW2 %%01CFM/4/SAVE(l)[0]:The user chose Y when decidi
+ng whether to save the configuration to the device.
+<SW2>
+Oct 17 2025 11:31:26-08:00 SW2 %%01PHY/1/PHY(l)[1]:    GigabitEthernet0/0/3: cha
+nge status to down
+Oct 17 2025 11:31:27-08:00 SW2 %%01PHY/1/PHY(l)[2]:    GigabitEthernet0/0/3: cha
+nge status to up User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<SW2>quit User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<SW2>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Info: Please input the file name ( *.cfg, *.zip ) [vrpcfg.zip]:
+Oct 17 2025 11:33:55-08:00 SW2 %%01CFM/4/SAVE(l)[0]:The user chose Y when decidi
+ng whether to save the configuration to the device.
+Now saving the current configuration to the slot 0.
+Save the configuration successfully.
+<SW2>quit User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<SW2>
+Oct 17 2025 11:35:13-08:00 SW2 %%01PHY/1/PHY(l)[0]:    GigabitEthernet0/0/3: cha
+nge status to down
+Oct 17 2025 11:35:14-08:00 SW2 %%01PHY/1/PHY(l)[1]:    GigabitEthernet0/0/3: cha
+nge status to up
+<SW2>system-view
+Enter system view, return user view with Ctrl+Z.
+[SW2]interface GigabitEthernet0/0/2
+[SW2-GigabitEthernet0/0/2]port link-type access
+[SW2-GigabitEthernet0/0/2]port default vlan 20
+[SW2-GigabitEthernet0/0/2]
+Oct 17 2025 11:36:39-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 11, the 
+change loop count is 0, and the maximum number of records is 4095.
+[SW2-GigabitEthernet0/0/2]quit
+[SW2]quit
+<SW2>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Oct 17 2025 11:37:02-08:00 SW2 %%01CFM/4/SAVE(l)[2]:The user chose Y when decidi
+ng whether to save the configuration to the device.
+Save the configuration successfully.
+<SW2>
+Oct 17 2025 11:39:15-08:00 SW2 %%01PHY/1/PHY(l)[3]:    GigabitEthernet0/0/3: cha
+nge status to down
+Oct 17 2025 11:39:16-08:00 SW2 %%01PHY/1/PHY(l)[4]:    GigabitEthernet0/0/3: cha
+nge status to up
+Oct 17 2025 11:45:48-08:00 SW2 %%01PHY/1/PHY(l)[5]:    GigabitEthernet0/0/3: cha
+nge status to up User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<SW2>
+<SW2>
